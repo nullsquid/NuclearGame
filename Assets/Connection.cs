@@ -7,6 +7,7 @@ public class Connection : MonoBehaviour {
     void Start() {
         parentNode = GetComponentInParent<Node>();
         gameObject.GetComponent<LineRenderer>().SetWidth(.09f, .09f);
+        gameObject.GetComponent<LineRenderer>().SetColors(Color.green, Color.green);
         FindConnections();
     }
 

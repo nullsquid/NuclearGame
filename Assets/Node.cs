@@ -8,10 +8,10 @@ public class Node : MonoBehaviour {
     public Node con2;
     public Node con3;
 
-    public int player;
+    public int player = 0;
     void OnTriggerStay(Collider other) {
         transform.position = Random.insideUnitCircle * GetComponentInParent<NodeGenerator>().sizeOfBoard;
-        Debug.Log("fired");
+        
     }
 
 }

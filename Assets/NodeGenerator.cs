@@ -68,6 +68,7 @@ public class NodeGenerator : MonoBehaviour {
         sizeOfBoard = 10 + (GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().HowManyTerritories * .2f);
         Camera.main.orthographicSize = 15 + (GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().HowManyTerritories * .2f);
         GenerateNodes();
-        
+        GameObject.FindGameObjectWithTag("PlayerManager").GetComponent<PlayerManager>().AssignPlayers();
+
     }
 }
